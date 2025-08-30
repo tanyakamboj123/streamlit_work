@@ -1,0 +1,14 @@
+## Project Overview
+
+This project is a simple web tool that takes a big block of text and turns it into a ready-to-use PowerPoint presentation. Instead of spending hours cutting, pasting, and formatting slides, you just paste your text, upload a PowerPoint template, and let the app do the heavy lifting.
+
+### How it Works
+- **Step 1:** You paste your notes or document into the app.  
+- **Step 2:** The app asks a language model (OpenAI, Anthropic, or Google Gemini — using your own key) to break the content into a slide outline.  
+- **Step 3:** The model creates a clear plan with a title, short bullet points, and suggested notes for each slide. This ensures slides are simple, clear, and flow logically.  
+
+### Applying Style
+The app then takes the PowerPoint file you uploaded — which already has your colors, fonts, and logos — and builds new slides using those styles. It even reuses any images or graphics in the template, like your company logo, so everything looks consistent. No new AI images are generated; it only works with what’s already in the template.
+
+### Result
+The end result is a polished presentation file (`.pptx`) you can download and present right away. The app runs in your browser with Streamlit, doesn’t save your API keys or files, and can be run locally on your computer or hosted online for others to use.
